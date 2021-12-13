@@ -24,11 +24,7 @@
 								<header id="header">
 									<a href="index.html" class="logo">About me</a>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Twitter</span></a></li>
 									</ul>
 								</header>
 
@@ -40,18 +36,19 @@
 											<p>Postdoctoral Fellow at the University of Alaska Fairbanks</p>
 										</header>
 										<p>I work as a seismologist at UAF's Geophysical Institute, in the <a href="https://www.gi.alaska.edu/research/seismology-and-geodesy">Seismology and Geodesy</a> group. I am primarily interested in <strong>inverse problem theory &</strong> <strong>uncertainty estimation</strong> methods and how to implement them in seismological applications.</p>
-										<p>My current research is focused on seismic moment tensor and uncertainty estimation, applied to nuclear monitoring. I am currently developer on the <a href="https://github.com/uafgeotools/mtuq">MTUQ</a> code.</p>
+										<p>My current research is focused on seismic moment tensor and uncertainty estimation, applied to nuclear monitoring. I am an active developer on the <a href="https://github.com/uafgeotools/mtuq">MTUQ</a> code.</p>
 										<!-- <ul class="actions">
 											<li><a href="#" class="button big">Learn More</a></li>
 										</ul> -->
 									</div>
+
 									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+										<img src="images/Me.jpg" alt=""/>
 									</span>
 								</section>
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header class="major">
 										<h2>Erat lacinia</h2>
 									</header>
@@ -85,60 +82,47 @@
 											</div>
 										</article>
 									</div>
-								</section>
+								</section> -->
 
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ipsum sed dolor</h2>
+										<h2>My work</h2>
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<div class="col-4"><span class="image fit"><img src="images/Waveforms.png" alt="" /></span></div>
+											<h3>Moment tensor inversion</h3>
+											<p>I am interested the inversion of moment tensor from waveform data. My work in this area is mostly based on the MTUQ package.</p>
+											<p>My current main contribution to the code is the implementation of a new stochastic optimization method</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="https://github.com/thurinj/mtuq" class="button">MTUQ</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<div class="col-4"><span class="image fit"><img src="images/Misfit.png" alt="" /></span></div>
+											<h3>CMA-ES</h3>
+											<p>I am currently pushing the implementation of the CMA-ES optimization algorithm to MTUQ. This algorithm is easily adaptable to moment tensor inversion, and is very efficient.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="CMA-ES.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<div class="col-4"><span class="image fit"><img src="images/simulation_cover.png" alt="" /></span></div>
+											<h3>Wave equation simulations</h3>
+											<p>I use <a href="https://github.com/geodynamics/specfem3d">SPECFEM3D</a> wave propagation software in my projects, in order to calculate synthetic waveforms for the geophysical inversion problems I am interested in.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="simulations.html" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<center>
+												<div class="col-4"><span class="image fit"><img src="images/SpecfemBeachball.png" style="max-width: 300px" alt="" /></span></div>
+											</center>
+											<h3>Specfem utilities</h3>
+											<p>I develop simple utilities to streamline the use of SPECFEM3D, and simplify the user experience by the use of automation and graphical user interfaces.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="helpers.html" class="button">More</a></li>
 											</ul>
 										</article>
 									</div>
@@ -151,13 +135,6 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -165,17 +142,19 @@
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
+										<li><a href="CMA-ES.html">CMA-ES</a></li>
+										<li><a href="simulations.html">Simulations</a></li>
+										<li><a href="helpers.html">Utilities</a></li>
+										<!-- <li><a href="elements.html">Elements</a></li> -->
+										<!-- <li> -->
+											<!-- <span class="opener">Submenu</span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
 												<li><a href="#">Tempus Magna</a></li>
 												<li><a href="#">Feugiat Veroeros</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<!-- <li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li> -->
 										<!-- <li>
@@ -196,25 +175,18 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ante interdum</h2>
+										<h2>See also</h2>
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="https://www.gi.alaska.edu" class="image"><img src="images/GI.png" style="max-width: 200px" alt=""/></a>
+											<p>UAF's Geophysical Institute website.</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="https://www.gi.alaska.edu/research/seismology-and-geodesy" class="image"><img src="images/aec.png" style="max-width: 200px" alt="" /></a>
+											<p>Visit the Alaska Earthquake Center website to learn about its mission and find useful resources on Alaskan earthquakes.</p>
 										</article>
 									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
 								</section>
 
 							<!-- Section -->
@@ -222,18 +194,19 @@
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
+										<li class="icon solid fa-envelope"><a href="mailto:jthurin@alaska.edu">jthurin@alaska.edu</a></li>
+										<li class="icon solid fa-phone">(617) 230-0819</li>
+										<li class="icon solid fa-home">
+										77 Massachusetts Avenue <br/>
+										Cambridge, MA 02139<br />
+										Office 54-414</li>
 									</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved.  Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
