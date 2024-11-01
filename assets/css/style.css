@@ -1,0 +1,234 @@
+header {
+    text-align: center;
+    padding: 20px;
+    /* border-bottom: 2px solid #e6e6e6; */
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: #44443b;
+    font-size: 1rem; /* Relative font size */
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: 'Inconsolata', monospace;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+header nav a:hover {
+    color: #8caba1 ;
+}
+
+body {
+    background-color: #c1bdba; /* Change this to the color you want outside the content-wrapper */
+    padding: 20px 0;
+}
+
+
+.content-wrapper {
+    width: 55%;
+    margin: 0 auto;
+    border: 3px solid #8caba1 ; /* Inner darker border */
+    padding: 20px;
+    box-shadow: 0 0 0 3px #4b726e ; /* Outer lighter border */
+    background-color: #f4f1ed ; /* Change this to the color you want inside the border */
+    min-width: 800px;
+}
+
+/* Default Markdown content styling */
+.content {
+    font-family: 'Inconsolata', monospace; /* Set font family for all text */
+    font-size: 15px; /* Default font size */
+    line-height: 1.6; /* Line height for readability */
+    width: 90%; /* Set content width to 90% */
+    margin: 0 auto; /* Center content */
+    text-align: justify; /* Justify the text for paragraphs */
+    /* text color */
+    color: #363a54 ;
+}
+
+.content p {
+    font-family: 'Inconsolata', monospace; /* Change paragraphs */
+}
+
+.content h1, .content h2, .content h3 {
+    font-family: 'Inconsolata', monospace; /* Use desired font */
+    font-weight: normal; /* Remove bold styling */
+    /* width: 90%; Set columns to span 90% of content-wrapper */
+    margin: 0 auto; /* Center the columns */
+}
+
+
+.content ul, .content ol, .content li {
+    font-family: 'Inconsolata', monospace; /* Change list items */
+}
+
+.content a {
+    color: #3b94cb; /* Same color as in your HTML-defined links */
+    text-decoration: underline;
+    font-family: 'Inconsolata', monospace; /* Use the same font */
+}
+
+.content a:hover {
+    color: #305a74; /* Hover color */
+}
+
+.two-column-layout {
+    display: flex;
+    gap: 30px; /* Space between columns */
+    /* width: 90%; Set columns to span 90% of content-wrapper */
+    margin: 0 auto; /* Center the columns */
+}
+
+.column {
+    flex: 1;
+}
+
+.text-content {
+    font-family: 'Inconsolata', monospace; /* Change the font */
+    line-height: 1.6; /* Increase line spacing */
+    text-align: justify; /* Justify the text */
+    font-size: 15px;
+}
+
+.text-content a {
+    color: #8caba1 ;
+    text-decoration: underline;
+}
+
+.text-content a:hover {
+    color: #4b726e ;
+}
+
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: 'Inconsolata', monospace;
+    font-size: 12px;
+    color: #44443b;
+    margin-top: 5px;
+    display: inline-block; /* Align the caption with the image */
+    text-align: justify; /* Justify the text */
+    /* width: 90%; */
+}
+
+.image-content img {
+    width: 100%; /* Ensure it scales to container */
+    max-width: 100%; /* Remove fixed 350px constraint */
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #e6e6e6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: 'Inconsolata', monospace;
+}
+
+.recent-posts {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recent-posts a {
+    margin: 15px;
+    color: #44443b;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: 'Inconsolata', monospace;
+}
+
+.recent-posts a:hover {
+    color: #8caba1 ;
+
+}
+/* Animation */
+#animatedTextContainer {
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    white-space: pre;
+    line-height: 1.0em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.char {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.line {
+    text-align: center;
+}
+
+@media (max-width: 414px) {
+    .two-column-layout {
+        flex-direction: column; /* Stack columns */
+        width: 95%;
+    }
+
+    .content, .text-content, .image-content {
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 0.7rem; /* Smaller font for header links */
+        margin: auto;
+    }
+
+    .recent-posts a {
+        font-size: 0.7rem; /* Smaller font for header links */
+        margin: 1;
+    }
+
+    .content-wrapper {
+        width: 90%;
+        padding: 15px;
+        min-width: auto;
+    }
+
+    .figure{
+        width: 50%;
+        margin: auto;
+    }
+
+    .figure-caption {
+        width: 90%;
+        margin: auto;
+    }
+
+    #animatedTextContainer {
+        font-family: 'Inconsolata', monospace;
+        white-space: pre;
+        line-height: 1.0em;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0 auto;
+        font-size: 0.45rem;
+    }
+
+    /* Make headings left-aligned instead of justified */
+    .content h1, .content h2, .content h3 {
+        text-align: left;
+    }
+
+}
+
+

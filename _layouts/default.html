@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <nav>
+                <a href="/" data-title="Home" data-id="home">Home</a> .
+                <a href="/research" data-title="Research" data-id="research">Research</a> .
+                <a href="/publications" data-title="Publications" data-id="publications">Publications</a> 
+                <!-- <a href="/photos" data-title="Photos" data-id="photos">Photos</a> -->
+            </nav>
+            <div class="recent-posts">
+                {% for post in site.posts limit:5 %}
+                    <a href="{{ post.url }}" data-title="{{ post.title }}" data-id="post{{ forloop.index }}">
+                        {{- post.date | date: "%b %d, %Y" -}}
+                    </a>{% unless forloop.last%}.{%endunless%}
+                {% endfor %}
+            </div>
+        </header>
+        <div class="animated-text" id="animatedTextContainer">
+            <!-- The title will be inserted here by JS -->
+        </div>
+        <br>
+          <hr style="border: 1px solid   #8caba1; width: 90%;">
+        <div class="content">
+            {{ content }}
+        </div>
+
+
+    </div>
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+<!-- Script to use LaTeX equations -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+</body>
+
+  <!-- <hr style="border: 1px solid #f60; width: 40%;"> -->
