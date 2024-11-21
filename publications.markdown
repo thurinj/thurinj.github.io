@@ -19,9 +19,9 @@ permalink: /publications
 
 <div class="two-column-layout">
     <div class="column text-content">
+        <p> - <b>J. Thurin</b>.  Sparse fault representation based on moment tensors interpolation. Submitted to <i>Seismica</i>, Accepted for publication (Nov 2024).</p>
         <p> - <b>J. Thurin</b>, R. Modrak, C. Tape, A. McPherson, F. R. Rodriguez Cardozo, J. Kintner, L. Ding, Q. Liu and J. Braunmiller. Moment tensor and point force estimation, with applications to earthquakes, landslides, and the 2017 DPRK nuclear explosion. Submitted to <i>Geophysical Journal International</i>, Oct 2024. </p>
         <p> - M. A. Denolle, et al. Training the Next Generation of Seismologists: Delivering Research-Grade Software Education for Cloud and HPC Computing through Diverse Training Modalities. Submitted to <i>Seismological Research Letters</i>, Sept 2024. <a href="https://arxiv.org/pdf/2409.19147.pdf" target="_blank">[preprint]</a> </p>
-        <p> - <b>J. Thurin</b>.  Sparse fault representation based on moment tensors interpolation. Submitted to <i>Seismica</i>, August 2024.</p>
     </div>
 </div>
 
