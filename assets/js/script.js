@@ -29,7 +29,7 @@ const animationConfigs = {
     //     tickSpeed: 200,
     //     animationType: 'spiral' // Adjusted to use subdued colors
     // },
-    contact: {
+    cv: {
         vowels: ['-', '|', '+', ' '],
         baseProbability: 0.1,
         colors: ['#c9ada7', '#9a8c98', '#4a4e69'], // Soft neutral colors
@@ -65,7 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
         '/research': 'research',
         '/publications': 'publications',
         '/about/': 'about',
-        '/contact': 'contact'
+        '/cv': 'cv',
+
     };
 
     // Determine the current page's data-id
